@@ -43,11 +43,11 @@ class AutonomousAgent:
         )
         
         # Model 3: Image captioning
-        print("  [3/6] Loading image captioner...")
         self.captioner = pipeline(
-            "image-to-text",
+            task="image-text-to-text",
             model="Salesforce/blip2-opt-2.7b",
-            device_map="auto"
+            device_map="auto",
+            torch_dtype="auto"
         )
         
         # Model 4: Web search
