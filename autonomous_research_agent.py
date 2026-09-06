@@ -1,4 +1,4 @@
-%%writefile autonomous_research_agent.py
+%%writefile /kaggle/working/autonomous_research_agent.py
 #!/usr/bin/env python3
 """
 GHOSTWORKER AI v1.0
